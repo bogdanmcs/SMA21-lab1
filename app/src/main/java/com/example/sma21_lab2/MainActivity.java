@@ -17,6 +17,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -110,8 +112,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // bShare & bSearch
-        Button bShare = findViewById(R.id.bShare);
-        Button bSearch = findViewById(R.id.bSearch);
+        FloatingActionButton bShare = findViewById(R.id.bShare);
+        FloatingActionButton bSearch = findViewById(R.id.bSearch);
 
         bShare.setOnClickListener( view -> {
             String inputName = eName.getText().toString();
@@ -150,5 +152,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
